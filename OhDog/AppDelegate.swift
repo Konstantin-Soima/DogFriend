@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyByuF6t6lOHudCac25nNpaaG1JrEi3Iruc")
+        //TODO:
+        //1. Места как Swarm, привязка к таймлайну
+        //2. Профиль
+        //3. Карта с возмлжностью отображения пользовательских мест (модерация)
+        //      Метки: лапка жёлтая - кафе, восклицательный знак - опасные места, лапка синяя - остальные места, лапка красная - клиники
         return true
     }
 

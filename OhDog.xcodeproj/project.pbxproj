@@ -12,9 +12,12 @@
 		B55022D221D00D6000A079A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55022D021D00D6000A079A3 /* Main.storyboard */; };
 		B55022D421D00D8100A079A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55022D321D00D8100A079A3 /* Assets.xcassets */; };
 		B55022D721D00D8100A079A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55022D521D00D8100A079A3 /* LaunchScreen.storyboard */; };
+		B55022E021D0167100A079A3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55022DF21D0167100A079A3 /* MapKit.framework */; };
+		E5F0CB95C7401CACC6C5E0B2 /* libPods-OhDog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC69C6164857BB17C8CAADB9 /* libPods-OhDog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48FD98F21C0CC209264A1333 /* Pods-OhDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhDog.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhDog/Pods-OhDog.release.xcconfig"; sourceTree = "<group>"; };
 		B55022C921D00D5E00A079A3 /* OhDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55022CC21D00D5F00A079A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B55022CE21D00D5F00A079A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,12 @@
 		B55022D321D00D8100A079A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55022D621D00D8100A079A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B55022D821D00D8100A079A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55022DF21D0167100A079A3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B55022E721D0224800A079A3 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = "OhDog/GoogleMaps-2.7.0/Maps/Frameworks/GoogleMapsCore.framework"; sourceTree = "<group>"; };
+		B55022E821D0224800A079A3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "OhDog/GoogleMaps-2.7.0/Maps/Frameworks/GoogleMaps.framework"; sourceTree = "<group>"; };
+		B55022ED21D0241100A079A3 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = "OhDog/GoogleMaps-2.7.0/Base/Frameworks/GoogleMapsBase.framework"; sourceTree = "<group>"; };
+		BC69C6164857BB17C8CAADB9 /* libPods-OhDog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OhDog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A63FDEECB6D935B2499A6D /* Pods-OhDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhDog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhDog/Pods-OhDog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55022E021D0167100A079A3 /* MapKit.framework in Frameworks */,
+				E5F0CB95C7401CACC6C5E0B2 /* libPods-OhDog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DF5459FB664789A5939562B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0A63FDEECB6D935B2499A6D /* Pods-OhDog.debug.xcconfig */,
+				48FD98F21C0CC209264A1333 /* Pods-OhDog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B55022C021D00D5C00A079A3 = {
 			isa = PBXGroup;
 			children = (
 				B55022CB21D00D5E00A079A3 /* OhDog */,
 				B55022CA21D00D5E00A079A3 /* Products */,
+				B55022DE21D0167000A079A3 /* Frameworks */,
+				6DF5459FB664789A5939562B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +86,18 @@
 			path = OhDog;
 			sourceTree = "<group>";
 		};
+		B55022DE21D0167000A079A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55022ED21D0241100A079A3 /* GoogleMapsBase.framework */,
+				B55022E821D0224800A079A3 /* GoogleMaps.framework */,
+				B55022E721D0224800A079A3 /* GoogleMapsCore.framework */,
+				B55022DF21D0167100A079A3 /* MapKit.framework */,
+				BC69C6164857BB17C8CAADB9 /* libPods-OhDog.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B55022DB21D00D8100A079A3 /* Build configuration list for PBXNativeTarget "OhDog" */;
 			buildPhases = (
+				354DEE0D0856FE928BE2825D /* [CP] Check Pods Manifest.lock */,
 				B55022C521D00D5E00A079A3 /* Sources */,
 				B55022C621D00D5E00A079A3 /* Frameworks */,
 				B55022C721D00D5E00A079A3 /* Resources */,
+				66C86EA62906008786699E92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +165,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		354DEE0D0856FE928BE2825D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OhDog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C86EA62906008786699E92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OhDog/Pods-OhDog-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhDog/Pods-OhDog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B55022C521D00D5E00A079A3 /* Sources */ = {
@@ -278,11 +355,19 @@
 		};
 		B55022DC21D00D8100A079A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A63FDEECB6D935B2499A6D /* Pods-OhDog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDDYTP3YHM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OhDog/GoogleMaps-2.7.0/Maps/Frameworks",
+					"$(PROJECT_DIR)/OhDog/GoogleMaps-2.7.0/M4B/Frameworks",
+					"$(PROJECT_DIR)/OhDog/GoogleMaps-2.7.0/Base/Frameworks",
+				);
 				INFOPLIST_FILE = OhDog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,17 +375,25 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "soyma-k.OhDog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B55022DD21D00D8100A079A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48FD98F21C0CC209264A1333 /* Pods-OhDog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDDYTP3YHM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OhDog/GoogleMaps-2.7.0/Maps/Frameworks",
+					"$(PROJECT_DIR)/OhDog/GoogleMaps-2.7.0/M4B/Frameworks",
+					"$(PROJECT_DIR)/OhDog/GoogleMaps-2.7.0/Base/Frameworks",
+				);
 				INFOPLIST_FILE = OhDog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "soyma-k.OhDog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
